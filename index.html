@@ -10,48 +10,48 @@
       charset="utf-8"
     >
   </head>
-  <body>
-    <aside class="aaa">
-      <h1>ToDo App</h1>
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <body class="body">
+    <aside class="banner">
+      <h1 class="banner__title">ToDo App</h1>
+      <img class="banner__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+      <a class="banner__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </aside>
-    <main class="centered-main-page-element">
-      <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+    <main class="main">
+      <label class="main__subtitle-add" for="new-task">Add Item</label>
+      <div class="main__task--wrapper">
+        <input id="new-task" class="main__input main__input-add" type="text">
+        <button class="main__button main__button-add">Add</button>
       </div>
-      <h2>Todo</h2>
-      <ul id="incompleteTasks">
-        <li>
-          <input type="checkbox">
-          <span class="task">Pay Bills</span>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
+      <h2 class="main__title">Todo</h2>
+      <ul id="incomplete-tasks" class="main__list">
+        <li class="main__list-item">
+          <input class="main__input-mark" type="checkbox">
+          <label class="main__subtitle">Pay Bills</label>
+          <input class="main__input main__input-edit" type="text" >
+          <button class="main__button main__button-edit">Edit</button>
+          <button class="main__button main__button-delete">
+            <img class="button__img" src="./remove.svg" alt="Remove button">
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <span class="task">Go Shopping</span>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
+        <li class="main__list-item main__list-item__edit">
+          <input class="main__input-mark" type="checkbox">
+          <label class="main__subtitle">Go Shopping</label>
+          <input class="main__input main__input-edit" type="text" value="Go Shopping">
+          <button class="main__button main__button-edit">Save</button>
+          <button class="main__button main__button-delete">
+            <img class="button__img" src="./remove.svg" alt="Remove button">
           </button>
         </li>
       </ul>
-      <h2>Completed</h2>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <span class="task">See the Doctor</span>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="Remove button">
+      <h2 class="main__title">Completed</h2>
+      <ul id="completed-tasks" class="main__list">
+        <li class="main__list-item">
+          <input class="main__input-mark" type="checkbox" checked>
+          <label class="main__subtitle">See the Doctor</label>
+          <input class="main__input main__input-edit" type="text">
+          <button class="main__button main__button-edit">Edit</button>
+          <button class="main__button main__button-delete">
+            <img class="button__img" src="./remove.svg" alt="Remove button">
           </button>
         </li>
       </ul>
